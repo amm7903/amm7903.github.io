@@ -1,0 +1,29 @@
+body {
+        background-color: #afa0cb;  
+}   
+
+.title {
+    background-color: #eeedf3;
+    display: flex;
+    justify-content: start;
+}
+
+.navbar {   
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.info, .navbar {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.aboutMe {
+    /* margin: auto; */
+    border: 3px solid red;
+    padding: 5%;
+
+}
