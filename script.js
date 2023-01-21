@@ -1,5 +1,7 @@
 function toggleInfo1(){
     let content = document.querySelector(".content")
+    let resumeBox = document.querySelector(".resumeContainer")
+    resumeBox.replaceChildren();
     content.replaceChildren();
     let about = document.createElement('p')
     about.innerText = "Software Engineer with background in mathematics (BA in Math) and math education. My journey from math teacher to software engineer began with a love of technology and sports. Ambitious Flatiron School Software Engineering program and Penn State math graduate developing user-friendly websites with clean code. I bring the ability to work quickly, act readily, and have the willingness to push comfort zone boundaries. My experience includes working with nonprofits aiding families in need during the pandemic, providing math education for Latino immigrants, and making websites for small businesses."
@@ -9,6 +11,8 @@ function toggleInfo1(){
 function toggleInfo2(){
     let content = document.querySelector(".content")
     content.replaceChildren();
+    let resumeBox = document.querySelector(".resumeContainer")
+    resumeBox.replaceChildren();
     let createTitle = document.createElement('p')
     createTitle.innerText = "Contact"
     let linkedin = document.createElement('a')
@@ -31,6 +35,8 @@ function toggleInfo2(){
  function toggleInfo3(){
     let content = document.querySelector(".content")
     content.replaceChildren();
+    let resumeBox = document.querySelector(".resumeContainer")
+    resumeBox.replaceChildren();
     let createTitle = document.createElement('p')
     createTitle.innerText = "Projects"
     content.append(createTitle)
@@ -51,11 +57,15 @@ function toggleInfo2(){
 //  }
 
  function toggleInfo4(){
-    let content = document.querySelector(".content")
+    let resume = document.querySelector(".content")
+    resume.replaceChildren();
+    let content = document.querySelector(".resumeContainer")
     content.replaceChildren();
-    let createTitle = document.createElement('p')
+    let createTitle = document.createElement('iFrame')
+    createTitle.className = "resume"
+    createTitle.frameborder = "0"
     createTitle.innerText = "Resume"
+    createTitle.src = "resume.pdf" 
     content.append(createTitle)
-
 
  }
